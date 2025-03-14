@@ -1,17 +1,19 @@
-:root{
-    --color-base: #333; 
-    --color-base-figure-background: ghostwhite; 
+:root {
+    --color-base: #333;
+    --color-base-figure-background: ghostwhite;
     --color-base-figure-border: #ccc;
     --color-base-h1: aliceblue;
-
-
+    --fonte-weight: 300
+}
+html{
+    scroll-behavior: smooth;
 }
 
 body {
 
     color: #333;
     font-family: "Roboto", sans-serif;
-    font-weight: 300;
+    font-weight: var(--fonte-weight);
     margin-left: auto;
     margin-right: auto;
     width: 940px;
@@ -23,7 +25,7 @@ h1 {
     font-family: "Playfair Display", serif;
     font-weight: 700;
     color: var(--color-base-h1);
-    
+
 }
 
 h2 {
@@ -31,11 +33,11 @@ h2 {
     margin-top: 30px;
     font-family: "Big Shoulders", sans-serif;
     font-weight: 400;
-    
+
 }
 
 figure {
-    background-color:var(--color-base-figure-background);
+    background-color: var(--color-base-figure-background);
     border: 1px solid var(--color-base-figure-border);
     text-align: center;
     padding: 15px;
