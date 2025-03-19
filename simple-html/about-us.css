@@ -1,0 +1,57 @@
+:root {
+    --color-base: #333;
+    --color-base-figure-background: ghostwhite;
+    --color-base-figure-border: #ccc;
+    --color-base-h1: aliceblue;
+    --fonte-weight: 300
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+
+    color: #333;
+    font-family: "Roboto", sans-serif;
+    font-weight: var(--fonte-weight);
+    margin-left: auto;
+    margin-right: auto;
+    width: 940px;
+}
+
+h1 {
+    background-image: url(../simple-html/img/sobre-background.jpg);
+    padding: 10px;
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    color: var(--color-base-h1);
+
+}
+
+h2 {
+    border-bottom: 2px groove #333;
+    margin-top: 30px;
+    font-family: "Big Shoulders", sans-serif;
+    font-weight: 400;
+
+}
+
+figure {
+    background-color: var(--color-base-figure-background);
+    border: 1px solid var(--color-base-figure-border);
+    text-align: center;
+    padding: 15px;
+    margin: 30px;
+}
+
+figcaption {
+    margin-top: 10px;
+    font-family: "Big Shoulders", sans-serif;
+    font-weight: 400;
+}
+
+p {
+    padding: 0 45px;
+    text-indent: 25px;
+    text-align: justify;
+}
