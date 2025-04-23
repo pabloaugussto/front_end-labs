@@ -6,6 +6,7 @@
   --color-base-footer: #777;
   --fonte-weight: 300;
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -53,22 +54,26 @@ p {
   text-indent: 25px;
   text-align: justify;
 }
+
 #centro-distribuição {
   margin-left: auto;
   margin-right: auto;
   width: 550px;
 }
+
 #footer {
   color: #777;
   margin: 30px 0;
   padding: 30px 0;
 }
+
 #footer img {
   background-color: var(--color-base-footer);
   margin-right: 30px;
   vertical-align: middle;
   width: 94px;
 }
+
 #familia-pelho {
   float: right;
   margin: 0 0 10px 10px;
@@ -108,14 +113,67 @@ ul {
     padding: 10px;
   }
 
-    #centro-distribuição {
-        width: 100%;
-        max-width: 550px;
-    }
+  #centro-distribuição {
+    width: 100%;
+    max-width: 550px;
+  }
 
-    #familia-pelho {
-        float: none;
-        margin: 0;
-        display: block;
-    }
+  #familia-pelho {
+    float: none;
+    margin: 0;
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    font-size: 14px;
+  }
+
+  body {
+    margin: 0 10px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+    padding: 5px;
+  }
+
+  h2 {
+    font-size: 1.2em;
+    margin-top: 15px;
+  }
+
+  p {
+    padding: 0;
+    text-indent: 0;
+    font-size: 0.9em;
+  }
+
+  figure {
+    margin: 15px 0;
+    padding: 8px;
+  }
+
+  ul {
+    padding: 0;
+    list-style: none;
+    font-weight: 400;
+  }
+
+  footer {
+    margin: 20px 0;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  footer img {
+    margin-right: 0;
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  header img {
+    display: none;
+  }
 }
