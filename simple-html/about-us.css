@@ -1,78 +1,121 @@
 :root {
-    --color-base: #333;
-    --color-base-figure-background: ghostwhite;
-    --color-base-figure-border: #ccc;
-    --color-base-h1: aliceblue;
-    --color-base-footer: #777;
-    --fonte-weight: 300
+  --color-base: #333;
+  --color-base-figure-background: ghostwhite;
+  --color-base-figure-border: #ccc;
+  --color-base-h1: aliceblue;
+  --color-base-footer: #777;
+  --fonte-weight: 300;
 }
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-
-    color: #333;
-    font-family: "Roboto", sans-serif;
-    font-weight: var(--fonte-weight);
-    margin-left: auto;
-    margin-right: auto;
-    width: 940px;
+  color: #333;
+  font-family: "Roboto", sans-serif;
+  font-weight: var(--fonte-weight);
+  margin-left: auto;
+  margin-right: auto;
+  width: 940px;
 }
 
 h1 {
-    background-image: url(../simple-html/img/sobre-background.jpg);
-    padding: 10px;
-    font-family: "Playfair Display", serif;
-    font-weight: 700;
-    color: var(--color-base-h1);
-
+  background-image: url(../simple-html/img/sobre-background.jpg);
+  padding: 10px;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  color: var(--color-base-h1);
 }
 
 h2 {
-    border-bottom: 2px groove #333;
-    margin-top: 30px;
-    font-family: "Big Shoulders", sans-serif;
-    font-weight: 400;
-
+  border-bottom: 2px groove #333;
+  margin-top: 30px;
+  font-family: "Big Shoulders", sans-serif;
+  font-weight: 400;
 }
 
 figure {
-    background-color: var(--color-base-figure-background);
-    border: 1px solid var(--color-base-figure-border);
-    text-align: center;
-    padding: 15px;
-    margin: 30px;
+  background-color: var(--color-base-figure-background);
+  border: 1px solid var(--color-base-figure-border);
+  text-align: center;
+  padding: 15px;
+  margin: 30px;
 }
 
 figcaption {
-    margin-top: 10px;
-    font-family: "Big Shoulders", sans-serif;
-    font-weight: 400;
+  margin-top: 10px;
+  font-family: "Big Shoulders", sans-serif;
+  font-weight: 400;
 }
 
 p {
-    padding: 0 45px;
-    text-indent: 25px;
-    text-align: justify;
+  padding: 0 45px;
+  text-indent: 25px;
+  text-align: justify;
 }
-#centro-distribuição{
-    margin-left: auto;
-    margin-right: auto;
-    width: 550px;
+#centro-distribuição {
+  margin-left: auto;
+  margin-right: auto;
+  width: 550px;
 }
-#footer{
-    color: #777;
-    margin: 30px 0;
-    padding: 30px 0;
+#footer {
+  color: #777;
+  margin: 30px 0;
+  padding: 30px 0;
 }
- #footer img{
-    background-color: var(--color-base-footer);
-    margin-right: 30px;
-    vertical-align: middle;
-    width: 94px;
- }
- #familia-pelho{
-    float: right;
-    margin:0 0 10px 10px;
- }
+#footer img {
+  background-color: var(--color-base-footer);
+  margin-right: 30px;
+  vertical-align: middle;
+  width: 94px;
+}
+#familia-pelho {
+  float: right;
+  margin: 0 0 10px 10px;
+}
+
+ul {
+  padding: 0 45px;
+}
+
+@media (max-width: 768px) {
+  body {
+    width: auto;
+    margin: 0 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  h1 {
+    font-size: 1.8em;
+    padding: 8px;
+  }
+
+  p {
+    padding: 0 15px;
+    text-indent: 15px;
+    text-align: left;
+    line-height: 1.5;
+  }
+
+  figure {
+    margin: 20px 0;
+    padding: 10px;
+  }
+
+    #centro-distribuição {
+        width: 100%;
+        max-width: 550px;
+    }
+
+    #familia-pelho {
+        float: none;
+        margin: 0;
+        display: block;
+    }
+}
