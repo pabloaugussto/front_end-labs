@@ -1,81 +1,125 @@
-body{
-    font-family: Arial sans-serif;
+:root {
+    --color-primary: #0f71ff;
+    --color-background: #ecf4ff;
+    --color-text: #36393f;
+    --color-light: #f7f7f7;
+    --color-alert: orange;
+  
+    --font-main: "Poppins", sans-serif;
+  
+    --card-width: 300px;
+    --card-padding: 40px;
+    --card-height: 540px;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    height: 100%;
     margin: 0;
-    padding: 40px;
-    background-color: #e3f2fd;
-    text-align: center;
-}
-
-h1{
-    color: #333;
-    margin-bottom: 40px;
-}
-
-.cards-container{
+    font-family: var(--font-main);
+    background-color: var(--color-background);
+    color: var(--color-text);
+  }
+  
+  body {
     display: flex;
+    align-items: center;
     justify-content: center;
     gap: 20px;
+    padding: 0 20px;
     flex-wrap: wrap;
-}
-
-.card{
-    background-color: #fff;
-    width: 250px;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card {
+    display: grid;
+    place-items: center;
+    gap: 10px;
+    width: var(--card-width);
+    max-width: var(--card-width);
+    height: var(--card-height);
+    padding: var(--card-padding);
+    border-radius: 5px;
+    background-color: white;
+    font-size: 100%;
     text-align: center;
-    transition: transform 0.3s;
-}
-
-.card:hover{
-    transform: scale(1.10);
-}
-
-.card h2{
-    margin-bottom: 10px;
-    color: #333;
-}
-
-.price{
-    font-size: 14px;
-    font-weight: bold;
-    color: #007bff;
-}
-
-.price span{
-    font-size: 14px;
-    font-weight: normal;
-    color: #888;
-}
-
-ul{
-    list-style: none;
-    padding: 0;
-    text-align: left;
-    margin: 20px 0;
-}
-
-ul li{
-    margin: 10px 0;
-}
-
-button{
-    background-color: #fff;
-    color: #007bff;
-    border: 2px solid #007bff;
-    padding: 10px 20px;
-    border-radius: 6px;
-    font-weight: bold;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  
+  .card:hover {
+      transform: scale(1.10);
+      box-shadow: 0 4px 20px rgb(186, 181, 210);
+  }
+  
+  .card h2 {
+      margin: 0;
+      text-shadow: 1px 1px 2px gray;
+  }
+  
+  .card var {
+      color: var(--color-primary);
+      font-weight: 400;
+      font-size: 40px;
+      font-style: normal;
+      margin-bottom: 10px;
+      transition: font-size 0.3 ease;
+  }
+  
+  .card:hover var {
+      font-size: 50px;
+  }
+  
+  .card var small {
+      font-size: 16px;
+  }
+  
+  abbr[title] {
+      cursor: help;
+      text-decoration: none;
+  }
+  
+  ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+  }
+  
+  ul li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 0;
+      margin-top: 0;
+  }
+  
+  ul > li:first-child {
+      font-weight: 500;
+  }
+  
+  .card button {
+    display: grid;
+    place-items: center;
+    min-width: 200px;
+    padding: 10px 0;
+    background: transparent;
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: inherit;
+    transition: background 0.3s, color 0.3 ease;
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-button:hover{
-    background-color: #007bff;
-    color: #fff;
-}
-
-.destaque{
-    border: 2px solid #ffc107;
-}
+  }
+  
+  .alert {
+    border: 2px solid var(--color-alert);
+  }
+  
+  .card:hover button {
+    color: var(--color-light);
+    background: rgba(15, 113, 255, 0.5);
+  }
