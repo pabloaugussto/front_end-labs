@@ -11,8 +11,13 @@ limpar.onclick = () => {
   }
 };
 function valorTeclaToDisplay(i) {
-  display.value += teclas[i].value;
+  if (display.value.length < 14) {
+    display.value += teclas[i].value;
+  } else {
+    alert("Limite de 14 dígitos atingido.");
+  }
 }
+
 for (let i = 0; i < teclas.length; i++) {
   console.log(teclas[i].value);
 }
